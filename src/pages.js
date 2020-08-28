@@ -79,13 +79,15 @@ async function saveClasses(req, res) {
         let queryString = "?subject=" + req.body.subject
         queryString += "&weekday=" + req.body.weekday[0]
         queryString += "&time=" + req.body.time_from[0]
-
-        return res.redirect("/study" + queryString)
+        
+        return res.render("give-classes.html", {saved:true, queryString})
     } catch (error) {
-        console.log(error)
+        console.log("Erro:"+error)
+        return res.render("give-classes.html", {saved:false})
     }
     
 }
+
 
 module.exports = {
     pageLanding,

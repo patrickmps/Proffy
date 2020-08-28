@@ -1,0 +1,48 @@
+/* page-proffy-sucess */
+
+#page-proffy-modal {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #8257e5e7;
+}
+
+#page-proffy-modal #modal-background {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-proffy-modal .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-proffy-modal .container  img{
+    width: 10rem;
+    padding-right: 10px;
+    
+}
+
+#page-proffy-modal h1 {
+    font: 700 3.6rem Archivo;
+    color: var(--color-title-in-primary);
+    display: inline;
+}
+
+@media (min-width:700px) {
+    #page-proffy-modal .container  img{
+        width: 15rem;
+        padding-right: 10px;
+    }
+    
+    #page-proffy-modal h1 {
+        font: 700 6rem Archivo;
+        color: var(--color-title-in-primary);
+        display: inline;
+    }
+
+}
